@@ -1,11 +1,7 @@
 h1
 {
-	text-align: center;
-	background-color: red;
+	font-size: large;
+	text-indent:3cap;
+	text-decoration: underline;
 }
-h2
-{
-	font-family: Verdana;
-	font-style: italic;
-	color: green;
-}
+
