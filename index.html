@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.css" integrity="sha384-Wsr4Nh3yrvMf2KCebJchRJoVo1gTU6kcP05uRSh5NV3sj9+a8IomuJoQzf3sMq4T" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.js" integrity="sha384-+W9OcrYK2/bD7BmUAk+xeFAyKp0QjyRQUCxeU31dfyTt/FrPsUgaBTLLkVf33qWt" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 </head>
 
 
@@ -26,10 +35,10 @@
 <h1>Intérêts du moment :</h1>
 <p>
     <ol type='disc'>
-        <li id="ref-formes-modulaires"> Formes modulaires (en vue du programme de M1/2 mol) <sup><a href="#FirstCourseModularForms">[1]</a></sup>:
+        <li id="ref-formes-modulaires"> Formes modulaires (en vue du programme de M1/2 mol) <sup><a href="#FirstCourseModularForms">[Dia04]</a></sup>, (pour Oberwolfach) <sup><a href="#FirstCourseModularForms">[Zag04]</a></sup> :
             <ul>
                 <li> 
-                    Comment Eisenstein en est-il venu à considérer ses fameuses séries (qui sont les briques élémentaires des formes modulaires ?) ?
+                    Comment Eisenstein en est-il venu à considérer ses fameuses séries (qui sont les briques élémentaires des formes modulaires ?) ? Il semblerait qu'il s'intéressait initialement aux fonctions elliptiques.
                 </li>
                 <li>
                     Dimensions d'espaces de formes modulaires
@@ -38,7 +47,7 @@
                     Opérateurs de Hecke
                 </li>
                 <li id="Calegari">
-                    (à plus long terme) Quel rôle fondamental jouent-elles dans la théorie des nombres modernes ? Liens avec le théorème de modularité (un bon début : <sup><a href="#FermatCalegari">[2]</a></sup>)
+                    (à plus long terme) Quel rôle fondamental jouent-elles dans la théorie des nombres modernes ? Liens avec le théorème de modularité (un bon début : <sup><a href="#FermatCalegari">[Cal]</a></sup>)
                 </li>
             </ul>
         </li>
@@ -56,6 +65,10 @@
                 </li>
             </ul>
         </li>
+        <li>
+            Passer sous la barre constante des 4 minutes en résolution Rubix Cube 5x5.
+        </li>
+
     </ol>
 </p>
 
@@ -66,10 +79,13 @@
 
 <ul>
     <li id="FirstCourseModularForms">
-        <a href="#appel-ref1"></a>[1]</a> F. Diamond, J. Shurman, <i>A First Course in Modular Forms</i>, 2004.
+        <a href="#appel-refDia04"></a>[Dia04]</a> F. Diamond, J. Shurman, <i>A First Course in Modular Forms</i>, 2004.
     </li>
     <li id="#FermatCalegari">
-        <a href="#appel-ref2"></a>[2]</a> F. Calegari, <i> <a href=https://youtu.be/EDsK-8SBx-g?si=Gt3-PVUByHxR9WAeA>30 years of modularity : number theory since the proof of Fermat's Last Theorem</a> </i>
+        <a href="#appel-refCal"></a>[Cal]</a> F. Calegari, <i> <a href=https://youtu.be/EDsK-8SBx-g?si=Gt3-PVUByHxR9WAeA>30 years of modularity : number theory since the proof of Fermat's Last Theorem</a> </i>
+    </li>
+    <li id="1-2-3">
+        <a href="#appel-refZag04"></a>[Zag04]</a> D. Zagier, <i> <a href=https://people.mpim-bonn.mpg.de/zagier/files-restricted/doi/10.1007/978-3-540-74119-0/fulltext.pdf>Elliptic Modular Forms and Their Applications</a> </i>
     </li>
 </ul>
 
