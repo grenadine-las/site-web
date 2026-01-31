@@ -11,7 +11,16 @@
 
     <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
 
-    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false}
+            ]
+        });
+    "></script>
 </head>
 
 
@@ -35,9 +44,9 @@
         <li id="ref-formes-modulaires"> Formes modulaires (en vue du programme de M1/2 mol) <sup><a href="#FirstCourseModularForms">[Dia04]</a></sup>, (pour Oberwolfach) <sup><a href="#FirstCourseModularForms">[Zag04]</a></sup> :
             <ul>
                 <li> 
-                    Comment Eisenstein en est-il venu à considérer ses fameuses séries (qui sont les briques élémentaires des formes modulaires ?) 
-                    $$ G_k(\tau) = \sum_{(c,d)\in\Z^2 \backslash {(0,0)} \frac{1}{(c\tau + d)^k}},\; \Re e(\tau)>0 ?$$ 
-                    Il semblerait qu'il s'intéressait initialement aux fonctions elliptiques.
+                    Comment Eisenstein en est-il venu à considérer ses fameuses séries <br>
+                    $G_k(\tau) = \sum_{(c,d)\in\Z^2 \backslash {(0,0)}} \frac{1}{(c\tau + d)^k}\; (\textrm{pour }\Re e(\tau)>0)\,?$ 
+                    Il semblerait qu'il s'intéressait initialement aux fonctions elliptiques (voir <sup><a href="#FirstCourseModularForms">[Cha16]</a></sup>). Et en quoi forment-elles les briques élémentaires des formes modulaires ?
                 </li>
                 <li>
                     Dimensions d'espaces de formes modulaires
@@ -51,10 +60,10 @@
             </ul>
         </li>
         <li>
-            Mettre en forme ce présent site web $$\{ x, y, z \} \in \N$$:
+            Mettre en forme ce présent site web:
             <ul>
                 <li>
-                    Comment insérer du Latex dans du HTML ? Hint : Katex semble pas mal, il faut encore que je prenne en main HTML, le terminal, GitHub ...
+                    Comment insérer du Latex dans du HTML ? Pour l'instant, $\KaTeX$ semble plutôt bien marcher, à voir si c'est robuste dans la durée ...
                 </li>
                 <li>
                     Styliser les titres, sous titres, paragraphes ...
@@ -70,8 +79,11 @@
 
     </ol>
 </p>
+<br>
 
+<a href="questionReponse.html">Ici</a>, les questions qui ont trouvé réponses !
 
+<br>
 <h1>
     Références :
 </h1>
@@ -84,8 +96,14 @@
         <a href="#appel-refCal"></a>[Cal]</a> F. Calegari, <i> <a href=https://youtu.be/EDsK-8SBx-g?si=Gt3-PVUByHxR9WAeA>30 years of modularity : number theory since the proof of Fermat's Last Theorem</a> </i>
     </li>
     <li id="1-2-3">
-        <a href="#appel-refZag04"></a>[Zag04]</a> D. Zagier, <i> <a href=https://people.mpim-bonn.mpg.de/zagier/files-restricted/doi/10.1007/978-3-540-74119-0/fulltext.pdf>Elliptic Modular Forms and Their Applications</a> </i>
+        <a href="#appel-refZag04"></a>[Zag04]</a> D. Zagier, 
+        <i> <a href=https://people.mpim-bonn.mpg.de/zagier/files-restricted/doi/10.1007/978-3-540-74119-0/fulltext.pdf>Elliptic Modular Forms and Their Applications</a> </i>
     </li>
+    <li id="1-2-3">
+        <a href="#appel-refCha16"></a>[Cha16]</a> P. Charollois, R. Sczech, 
+        <i> <a href=https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_EMS.pdf>Elliptic Functions According to Eisenstein and Kronecker: An Update</a></i>, 2016
+    </li>
+    
 </ul>
 
 </body>
