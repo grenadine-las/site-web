@@ -26,6 +26,8 @@ h1
 }
 
 
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -63,5 +65,5 @@ body {
 
 /* Pour éviter que le contenu passe sous la navbar */
 main {
-    margin-top: 200px;
+    margin-top: 500px;
 }
