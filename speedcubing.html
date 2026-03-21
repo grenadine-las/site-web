@@ -33,7 +33,19 @@
     "></script>
 </head>
 
+
 <body>
+<div id="navbar"></div>
+
+<script>
+fetch("navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
+
+
     <p align="right">
         Insérer fait mathématique sur le Rubix Cube (genre, le groupe qui le décrit)
     </p>
