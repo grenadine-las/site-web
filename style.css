@@ -66,6 +66,5 @@ body {
 
 /* Pour éviter que le contenu passe sous la navbar */
 main {
-    margin: 0;
-    padding-top: 70px; /* 👈 évite les bugs de chevauchement */
+    margin: 60px;
 }
