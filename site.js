@@ -5,11 +5,11 @@ const albums = [
         artiste: "Hamza",
         cover: "album_du_moment/Hamza_H24.jpg"
     },
-<!--    {
+/*   {
         titre: "Fugue",
         artiste: "2L",
         cover: "album_du_moment/2L_Fugue.jpg"
-    } -->
+    }*/
     {
         titre: "BABYLONE BRÛLE",
         artiste: "Jeune Lion",
