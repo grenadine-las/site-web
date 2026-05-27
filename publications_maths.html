@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="header.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 
@@ -27,17 +28,11 @@
 
 </head>
 
+<body>
+    <main-header></main-header>
 
 <h2> Essayant d'être sérieux </h2>
-<div id="navbar"></div>
 
-<script>
-fetch("navbar.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("navbar").innerHTML = data;
-  });
-</script>
 
     Mémoire de L3 (encadré par Arthur-César Le Bras): <a href="pdf\memoire_29_01_26.pdf">Critères de rationalité de séries formelles : applications à l'arithmétique et à la géométrie algébrique</a>
 <br>
@@ -47,3 +42,5 @@ fetch("navbar.html")
 <p>
     <a href="pdf\latex_calendrier_padique.pdf">Calendrier de l'Avent <em>p</em>-adique</a>
 </p>
+
+</body>
